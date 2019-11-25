@@ -1,0 +1,6 @@
+ITEM 1
+NAMA ITEM:
+spesifikasi item:
+harga:
+
+produknya di tambah sebanyak mungkin
