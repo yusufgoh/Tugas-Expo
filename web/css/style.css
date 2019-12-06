@@ -730,6 +730,12 @@ ul.tic-info li {
     text-transform: uppercase;
     font-weight: 700;
 }
+.cart-item__content {
+    border: 1px solid black;
+  padding: 25px 50px;
+  background-color:white;
+    
+}
 
 span.money {
     font-size: 1em;
@@ -1085,6 +1091,27 @@ form.w3layouts-newsletter {
     flex-basis: 100%;
     background: #efeeee;
 }
+._19lAw4shopee-input-quantity {
+   
+    font-size: 17px;
+    color : black;
+    text-align: center;
+
+}
+._1zT8xu_18Y8Ul{
+    font-size: 17px;
+    color:black;
+    background:grey;
+    text-align: center;
+
+}
+.cart-item__cell-total-price{
+    _color: black;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    text-align:center ;
+}
 
 .w3layouts-newsletter button.btn1 {
     color: #ff4c4c;
@@ -1101,6 +1128,30 @@ form.w3layouts-newsletter {
     cursor: pointer;
     border-radius: 0;
     padding: 0.7em 2em;
+
+}
+.cart-item-overview__selling-point-img{
+    margin-left: 0%;
+}
+.cart-item-overview__product-name-wrapper{
+    text-align: center;
+}
+.btn2 {
+    color: #ff4c4c;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    border: transparent;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    background: #1e272e;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0.7em 2em;
+    margin-left: 41.4%;
 }
 
 h2.logo-2 a {
