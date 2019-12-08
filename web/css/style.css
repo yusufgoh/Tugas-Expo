@@ -1,10 +1,3 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
 html,
 body {
     margin: 0;
@@ -108,7 +101,25 @@ nav {
     color: #fff;
     font-size: 1em;
     font-weight: 700;
-    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 0 0 20px #00b3ff;
+}
+
+#logo .font-style {
+    color:#fff; 
+    outline: #1c1d21;
+    text-shadow: 0 0 20px ;
+}
+
+#logo .font-style:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #00aaff;
+    filter: blur(15px);
 }
 
 
@@ -382,7 +393,9 @@ li > a:only-child:after {
 /*--/banner --*/
 
 .main-banner {
+    /*
     background: url(../images/banner.jpg)no-repeat center;
+    */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -428,9 +441,17 @@ li > a:only-child:after {
 .banner-info {
     padding: 16em 0 0em 3em;
     width: 32%;
+    
+}
+
+.banner-info .info {
+    padding-top: ;
 }
 
 .banner-info h3 {
+    position: absolute;
+    top: 30%;
+    right:  10%;
     font-size: 3.5em;
     letter-spacing: 2px;
     color: #fff;
@@ -446,8 +467,13 @@ li > a:only-child:after {
     text-transform: uppercase;
     margin: 0;
     text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    top: 40%;
+    right:  10%;
+    
 }
 .ban-buttons a {
+    
     background: #fff;
     padding: 11px 31px;
     font-size: 13px;
@@ -468,6 +494,7 @@ li > a:only-child:after {
     -ms-transition: 0.5s all;
     font-weight: 600;
     text-transform: uppercase;
+    
 }
 
 .ban-buttons a.active,
@@ -475,10 +502,98 @@ li > a:only-child:after {
     opacity: 0.8;
 }
 
+a.btn {
+    position: absolute;
+    top: 50%;
+    right:  25%;
+}
+
 a.btn.active {
     background: #10adfb;
     color: #fff;
     border: #10adfb;
+    position: absolute;
+    top: 50%;
+    right:  10%;
+}
+
+/* For Slide Show */
+.slidershow {
+    /*
+    margin: 20px;
+    */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #FFF;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1{
+    margin-left: -80%;
 }
 
 /*-- //place holder --*/
@@ -535,7 +650,7 @@ ul.events-icons.new-inf img {
 .feature-grids span {
     font-size: 1.5em;
     text-align: center;
-    color: #ff4c4c;
+    color: #757a7d;
     line-height: 3em;
 }
 
@@ -552,7 +667,7 @@ ul.events-icons.new-inf img {
 }
 
 .bottom-gd2-active {
-    background: #ff4c4c;
+    background: #757a7d;
     transition: 2s all;
     -webkit-transition: 2s all;
     -moz-transition: 2s all;
@@ -614,6 +729,12 @@ ul.tic-info li {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 700;
+}
+.cart-item__content {
+    border: 1px solid black;
+  padding: 25px 50px;
+  background-color:white;
+    
 }
 
 span.money {
@@ -826,6 +947,12 @@ ul.w3layouts-box-list li {
     letter-spacing: 1px;
     font-size: 0.9em;
 }
+
+ul.w3layouts-box-list li a{
+    list-style: none;
+    color: #8c9398;
+    letter-spacing: 1px;
+}
 .grid-img-right{
 background: url(../images/single.jpg)no-repeat center;
 -webkit-background-size: cover;
@@ -970,6 +1097,27 @@ form.w3layouts-newsletter {
     flex-basis: 100%;
     background: #efeeee;
 }
+._19lAw4shopee-input-quantity {
+   
+    font-size: 17px;
+    color : black;
+    text-align: center;
+
+}
+._1zT8xu_18Y8Ul{
+    font-size: 17px;
+    color:black;
+    background:grey;
+    text-align: center;
+
+}
+.cart-item__cell-total-price{
+    _color: black;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    text-align:center ;
+}
 
 .w3layouts-newsletter button.btn1 {
     color: #ff4c4c;
@@ -986,6 +1134,30 @@ form.w3layouts-newsletter {
     cursor: pointer;
     border-radius: 0;
     padding: 0.7em 2em;
+
+}
+.cart-item-overview__selling-point-img{
+    margin-left: 0%;
+}
+.cart-item-overview__product-name-wrapper{
+    text-align: center;
+}
+.btn2 {
+    color: #ff4c4c;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    border: transparent;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    background: #1e272e;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0.7em 2em;
+    margin-left: 41.4%;
 }
 
 h2.logo-2 a {
@@ -1267,6 +1439,66 @@ a.move-top span {
     }
 }
 
+/* Promo Section*/
+#showDisc {
+    position: inherit;
+    background-image:  url(../products/Banner/Promo.jpg);
+    margin: 5px;
+	background-size:cover;
+	background-position:center;
+    margin-left: 5%;
+    width: 90%;
+    padding: 25px;
+}
+#showDisc .promo {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+#showDisc .promo h2 , #showDisc .promo p {
+    color: #fff;
+}
+
+#showDisc .promo .promo-btn {
+    border: solid #fff 1px;
+    background: transparent;
+    color: #FFF;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#showDisc .promo .promo-btn:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.8s ease;
+}
+
+/*Sponsor*/
+#sponsor {
+    position: inherit;
+    width: 100%;
+    height: 15%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,01)) , url(../products/Logo_Sponsor/187225.jpg);
+	background-size:cover;
+	background-position:center;
+    padding: 15px;
+}
+
+#sponsor .sponsored_brand {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+#sponsor .sponsored_brand .img-logo{
+    height: 35px;
+    width: auto;
+    margin: 5px 15px 5px 15px;
+    border: solid #fff 1px ;
+}
+
 /*** Responsive Menu For Smaller Device ***/
 
 @media screen and (max-width:900px) {
@@ -1453,4 +1685,7 @@ a.move-top span {
   
 }
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 /*--//responsive--*/
+
+
