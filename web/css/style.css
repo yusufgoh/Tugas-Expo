@@ -6,6 +6,43 @@ body {
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
+
+.pembayaran:hover{
+    background-color:grey;
+    cursor: pointer;
+
+   }
+   
+   .pembayaran{
+   display:inline-block;
+   text-align:center;
+   width:30%;
+   margin-left:30px;
+   }
+   
+   .pembayaran img{
+   padding-top:30px;
+  
+
+   }
+   
+   .pembayaran pre{
+   color:grey;
+   font-family:sans-serif;
+   font-weight: bold;
+   font-size: large;
+   padding-top:6px;
+   
+   }
+
+   .pembayaran pre:hover
+   {
+color:White;
+
+   }
+
+
+
 body a {
     text-decoration: none;
     transition: 0.5s all;
@@ -444,9 +481,11 @@ li > a:only-child:after {
     
 }
 
+.banner-info .info {
+    padding-top:default;
+}
 
 .banner-info h3 {
-    float: right;
     position: absolute;
     top: 30%;
     right:  10%;
@@ -516,7 +555,6 @@ a.btn.active {
 }
 
 /* For Slide Show */
-
 .slidershow {
     /*
     margin: 20px;
@@ -563,41 +601,6 @@ input[name="r"]{
     width: 500%;
     height: 100%;
     display: flex;
-    animation: 20s slidy infinite;
-}
-
-
-@keyframes slidy{
-    0%{
-        left: 0%;
-    }
-    18%{
-        left: 0%;
-    }
-    20%{
-        left: -100%;
-    }
-    38%{
-        left: -100%;
-    }
-    40%{
-        left: -200%;
-    }
-    58%{
-        left: -200%;
-    }
-    60%{
-        left: -300%;
-    }
-    78%{
-        left: -300%;
-    }
-    80%{
-        left: -400%;
-    }
-    98%{
-        left: -400%;
-    }
 }
 
 .slide{
@@ -764,6 +767,12 @@ ul.tic-info li {
     text-transform: uppercase;
     font-weight: 700;
 }
+.cart-item__content {
+    border: 1px solid black;
+  padding: 25px 50px;
+  background-color:white;
+    
+}
 
 span.money {
     font-size: 1em;
@@ -902,10 +911,6 @@ ul.list-unstyled.w3layouts-icons.clients li span:hover {
 
 }
 
-.contact-info .display{
-    display: flex;
-}
-
 /*-- //testimonials --*/
 .men-thumb-item{
    position: relative;
@@ -979,8 +984,14 @@ ul.w3layouts-box-list li {
     letter-spacing: 1px;
     font-size: 0.9em;
 }
+
+ul.w3layouts-box-list li a{
+    list-style: none;
+    color: #8c9398;
+    letter-spacing: 1px;
+}
 .grid-img-right{
-background: url(../images/single.jpg)no-repeat center;
+background: url(../products/Banner/Promo.jpg)no-repeat center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -1123,6 +1134,27 @@ form.w3layouts-newsletter {
     flex-basis: 100%;
     background: #efeeee;
 }
+._19lAw4shopee-input-quantity {
+   
+    font-size: 17px;
+    color : black;
+    text-align: center;
+
+}
+._1zT8xu_18Y8Ul{
+    font-size: 17px;
+    color:black;
+    background:grey;
+    text-align: center;
+
+}
+.cart-item__cell-total-price{
+    _color: black;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    text-align:center ;
+}
 
 .w3layouts-newsletter button.btn1 {
     color: #ff4c4c;
@@ -1139,6 +1171,30 @@ form.w3layouts-newsletter {
     cursor: pointer;
     border-radius: 0;
     padding: 0.7em 2em;
+
+}
+.cart-item-overview__selling-point-img{
+    margin-left: 0%;
+}
+.cart-item-overview__product-name-wrapper{
+    text-align: center;
+}
+.btn2 {
+    color: #ff4c4c;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 14px 0;
+    border: transparent;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    background: #1e272e;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0.7em 2em;
+    margin-left: 41.4%;
 }
 
 h2.logo-2 a {
