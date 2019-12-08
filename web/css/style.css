@@ -1103,6 +1103,7 @@ footer {
     background: #f7f7f7;
 }
 
+
 h3.footer-title {
     font-size: 1.1em;
     font-weight: 600;
@@ -1208,17 +1209,34 @@ h2.logo-2 a {
 .contact-right-content input[type="text"], .contact-right-content input[type="email"],.contact-right-content input[type="tel"], .contact-right-content textarea {
     padding: 0.8em 1em;
     color: #495057;
-    border: none;
     border-radius: 0em;
     font-size: 1em;
     letter-spacing: 1px;
     margin-bottom: 1em;
     -webkit-appearance: none;
     outline: none;
-    /* display: block; */
+    display: block;
     width: 100%;
     background: #f0f1f3;
 }
+ 
+
+
+.contact-info1 {
+    display: flex;
+    margin: 0%;
+    padding: 0%
+}
+
+.contact-info .no-telp{
+    padding-right: ;
+}
+
+.contact-info .footer-address-inf{
+    flex: 1;
+    padding: 10px 30px;
+}
+
 .contact-right-content input[type="submit"] {
     outline: none;
     border: none;
