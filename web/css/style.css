@@ -445,7 +445,7 @@ li > a:only-child:after {
 }
 
 .banner-info .info {
-    padding-top: ;
+    padding-top:default;
 }
 
 .banner-info h3 {
@@ -954,7 +954,7 @@ ul.w3layouts-box-list li a{
     letter-spacing: 1px;
 }
 .grid-img-right{
-background: url(../images/single.jpg)no-repeat center;
+background: url(../products/Banner/Promo.jpg)no-repeat center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
