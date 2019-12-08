@@ -941,6 +941,12 @@ ul.w3layouts-box-list li {
     letter-spacing: 1px;
     font-size: 0.9em;
 }
+
+ul.w3layouts-box-list li a{
+    list-style: none;
+    color: #8c9398;
+    letter-spacing: 1px;
+}
 .grid-img-right{
 background: url(../images/single.jpg)no-repeat center;
 -webkit-background-size: cover;
